@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
+    "pa11y": "pa11y-ci -c .pa11yci.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/glenn-hamilton/Scheduler-Test/issues"
   },
-  "homepage": "https://github.com/glenn-hamilton/Scheduler-Test#readme"
+  "homepage": "https://github.com/glenn-hamilton/Scheduler-Test#readme",
+  "devDependencies": {
+    "pa11y-ci": "3.0.1"
+  }
 }
