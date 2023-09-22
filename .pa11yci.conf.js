@@ -7,8 +7,8 @@ const defaults = {
 };
 
 const urls = [
-    '${URL}',
-    'http://localhost:3000'
+    'https://www.kainos.com',
+    '${URL}'
 ];
 
 function myPa11yCiConfiguration() {

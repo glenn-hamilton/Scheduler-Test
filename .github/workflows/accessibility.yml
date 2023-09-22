@@ -23,8 +23,8 @@ jobs:
         cache: 'npm'
     - name: Install Dependencies
       run: npm install
-    - name: Start Server
-      run: npm run start
+#    - name: Start Server
+#      run: npm run start
     - name: Run Pa11y Accessibility Tests
       env:
         URL: ${{ vars.URL }}
