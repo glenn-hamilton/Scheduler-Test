@@ -1,7 +1,9 @@
 const defaults = {
     standard: 'WCAG2AA',
     timeout: 50000,
-    runners: ['axe']
+    runners: [
+        'axe'
+    ]
 };
 
 const urls = [
