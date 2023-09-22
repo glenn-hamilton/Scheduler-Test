@@ -1,4 +1,5 @@
 const defaults = {
+    concurrency: 1,
     standard: 'WCAG2AA',
     timeout: 50000,
     runners: [
@@ -7,8 +8,7 @@ const defaults = {
 };
 
 const urls = [
-    'https://www.kainos.com',
-    '${URL}'
+    'https://www.kainos.com'
 ];
 
 function myPa11yCiConfiguration() {
