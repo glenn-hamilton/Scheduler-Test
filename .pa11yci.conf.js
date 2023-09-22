@@ -4,11 +4,17 @@ const defaults = {
     timeout: 50000,
     runners: [
         'htmlcs'
-    ]
+    ],
+    chromeLaunchConfig: {
+        args: [
+            '--no-sandbox'
+        ]
+    }
 };
 
 const urls = [
-    'https://www.kainos.com'
+    'https://www.kainos.com',
+    '${URL}'
 ];
 
 function myPa11yCiConfiguration() {
@@ -21,6 +27,7 @@ function myPa11yCiConfiguration() {
     return {
         defaults: defaults,
         urls: urls,
+
     }
 }
 
