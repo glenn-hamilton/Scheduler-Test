@@ -13,7 +13,6 @@ const defaults = {
 };
 
 const urls = [
-    'https://www.kainos.com',
     '${URL}'
 ];
 
