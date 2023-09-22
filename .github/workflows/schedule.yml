@@ -1,8 +1,12 @@
 name: Schedule
 
 on:
-  schedule:
-    - cron: '*/20 * * * *'
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  # schedule:
+  #   - cron: '*/20 * * * *'
 
 jobs:
   build:
