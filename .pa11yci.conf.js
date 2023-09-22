@@ -3,7 +3,7 @@ const defaults = {
     standard: 'WCAG2AA',
     timeout: 50000,
     runners: [
-        'axe'
+        'htmlcs'
     ]
 };
 
