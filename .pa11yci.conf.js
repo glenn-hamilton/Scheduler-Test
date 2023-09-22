@@ -7,7 +7,8 @@ const defaults = {
 };
 
 const urls = [
-    '${URL}'
+    '${URL}',
+    'http://localhost:3000'
 ];
 
 function myPa11yCiConfiguration() {
