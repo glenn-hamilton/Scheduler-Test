@@ -23,3 +23,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run pa11y
+      env:
+        PA11Y_TEST: ${{ vars.URL }}
