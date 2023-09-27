@@ -9,7 +9,7 @@ on:
 #   - cron: '0 20 * * *'
 
 jobs:
-  pa11y:
+  selenium:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,6 +24,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Run Selenium Tests
-#      env:
-#        URL: ${{ vars.URL }}
+      env:
+        APP_ENV: ${{ vars.APP_ENV }}
+        UI_TEST_URL: ${{ vars.UI_TEST_URL }}
       run: npm run test-ui

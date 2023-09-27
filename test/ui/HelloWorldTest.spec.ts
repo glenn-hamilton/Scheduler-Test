@@ -15,7 +15,8 @@ describe('Hello World Test', async () => {
     });
 
     it('Job Roles', async () => {
-        await driver.get('https://fuwyngxgmx.eu-west-1.awsapprunner.com/');
+        // @ts-ignore
+        await driver.get(process.env.UI_TEST_URL)
 
         await driver.findElement(By.id('jobs')).click()
 
