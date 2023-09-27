@@ -1,12 +1,12 @@
-name: Accessibility
+name: Selenium
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
-   - cron: '0 20 * * *'
+#  schedule:
+#   - cron: '0 20 * * *'
 
 jobs:
   pa11y:
@@ -23,7 +23,7 @@ jobs:
         cache: 'npm'
     - name: Install Dependencies
       run: npm install
-    - name: Run Pa11y Accessibility Tests
-      env:
-        URL: ${{ vars.URL }}
-      run: npm run pa11y
+    - name: Run Selenium Tests
+#      env:
+#        URL: ${{ vars.URL }}
+      run: npm run test-ui
